@@ -1,11 +1,17 @@
-var addition = (a,b) => {return a + b};
+const plus = document.getElementbyId("add");
+const subtract = document.getElementById("subtract");
+const multiply = document.getElementById("multiply");
+const divide = document.getElementById("divide");
+
+var a = parseInt(document.getElementById("fnum").value);
+var b = parseInt(document.getElementById("snum").value);
+
+
+function addition () {
+    
+};
 var subtraction = (a,b) => {return a - b};
 var multiplication = (a,b) => {return a * b};
 var division = (a,b) => {return a / b};
 
-var add = document.getElementbyID("add");
-var subtract = document.getElementById("subtract");
-var multiply = document.getElementById("multiply");
-var divide = document.getElementById("divide");
 
-add.addEventListener("click", addition);

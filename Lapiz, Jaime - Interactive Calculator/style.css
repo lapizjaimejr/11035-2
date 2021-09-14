@@ -37,15 +37,13 @@ h1 {
     font-weight:bold;
 }
 
-.result {
+#answer {
     margin-top: 5%;
     text-align: center;
-}
-
-.result p {
     font-size: 25px;
     color: #ffffff;
 }
+
 
 
 

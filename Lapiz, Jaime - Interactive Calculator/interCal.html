@@ -15,29 +15,27 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+    
     <h1>Basic Calculator</h1>
 
     <div class = "operators">
         <label for="fname">First Number</label><br>
-        <input type="text" id="fnum" name="fnum"><br><br>
+        <input type="text" id="fnum" name="firstnum"><br><br>
         <label for="lname">Second Number</label><br>
-        <input type="text" id="snum" name="snum"><br><br>
+        <input type="text" id="snum" name="secondnum"><br><br>
     </div>
  
-
+    <button type="button" class="btn btn-primary" id="test">test</button>
     <div class = "operation">
-        <input class="btn btn-primary" id ="add" type="button" value="+">
-        <input class="btn btn-primary" id ="subtract" type="button" value="-">
-        <input class="btn btn-primary" id = "multiply" type="button" value="*">
-        <input class="btn btn-primary" id = "divide" type="button" value="/">
+        <input class="btn btn-primary" id="add" type="button" value="+">
+        <input class="btn btn-primary" id="subtract" type="button" value="-">
+        <input class="btn btn-primary" id="multiply" type="button" value="*">
+        <input class="btn btn-primary" id="divide" type="button" value="/">
     </div>
 
-    <div class = "result">
-        <p>....</p>
-    </div>
-   
-
-
-    <script src = "interCal.js"></script>
+    <p id="answer">....</p>       
+ 
+   <script src = "interCal.js"></script>
+    
 </body>
 </html>
