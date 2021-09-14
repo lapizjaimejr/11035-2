@@ -1,17 +1,54 @@
-const plus = document.getElementbyId("add");
-const subtract = document.getElementById("subtract");
-const multiply = document.getElementById("multiply");
-const divide = document.getElementById("divide");
+var firstNum = document.getElementById("fnum");
+var secondNum = document.getElementById("snum");
 
-var a = parseInt(document.getElementById("fnum").value);
-var b = parseInt(document.getElementById("snum").value);
+var plus = document.getElementById("add");
+var subtract = document.getElementById("sub");
+var multiply = document.getElementById("mul");
+var divide = document.getElementById("div");
+var ans = document.getElementById("answer");
+
+var themeSwitch = document.getElementById("flexSwitchCheckDefault");
 
 
 function addition () {
+    var result = parseFloat(firstNum.value) + parseFloat(secondNum.value);
+    ans.innerText = result;
+}
+
+function subtraction () {
+    var result = parseFloat(firstNum.value) - parseFloat(secondNum.value);
+    ans.innerText = result;
+}
+
+function multiplication () {
+    var result = parseFloat(firstNum.value) * parseFloat(secondNum.value);
+    ans.innerText = result;
+}
+
+function division () {
+    var result = parseFloat(firstNum.value) / parseFloat(secondNum.value);
+    ans.innerText = result;
+}
+
+function darkModeOn() {
+    document.body.classList.add("dark-mode");
+}
+
+function darkModeOff() {
+    document.body.classList.remove("dark-mode");
+}
+
+function checkMode() {
+    if (themeSwitch.checked)
+        darkModeOn();
+    else
+        darkModeOff();
+}
+
+plus.addEventListener("click", addition);
+subtract.addEventListener("click", subtraction);
+multiply.addEventListener("click", multiplication);
+divide.addEventListener("click", division);
+themeSwitch.addEventListener("click", checkMode);
+
     
-};
-var subtraction = (a,b) => {return a - b};
-var multiplication = (a,b) => {return a * b};
-var division = (a,b) => {return a / b};
-
-

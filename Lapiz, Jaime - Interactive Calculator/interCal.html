@@ -6,36 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
 <body>
-    
-    <h1>Basic Calculator</h1>
 
-    <div class = "operators">
-        <label for="fname">First Number</label><br>
-        <input type="text" id="fnum" name="firstnum"><br><br>
-        <label for="lname">Second Number</label><br>
-        <input type="text" id="snum" name="secondnum"><br><br>
-    </div>
- 
-    <button type="button" class="btn btn-primary" id="test">test</button>
-    <div class = "operation">
-        <input class="btn btn-primary" id="add" type="button" value="+">
-        <input class="btn btn-primary" id="subtract" type="button" value="-">
-        <input class="btn btn-primary" id="multiply" type="button" value="*">
-        <input class="btn btn-primary" id="divide" type="button" value="/">
-    </div>
+        <h1>Basic Calculator</h1>
 
-    <p id="answer">....</p>       
- 
-   <script src = "interCal.js"></script>
+        <div class = "operands">
+            <label for="fname">First Number</label><br>
+            <input type="text" id="fnum" name="firstnum"><br><br>
+            <label for="lname">Second Number</label><br>
+            <input type="text" id="snum" name="secondnum"><br><br>
+        </div>
+        <div class = "operators">
+            <button type = "button" class = "btn btn-primary" id= "add">+</button>
+            <button type = "button" class = "btn btn-primary" id= "sub">-</button>
+            <button type = "button" class = "btn btn-primary" id= "mul">*</button>
+            <button type = "button" class = "btn btn-primary" id= "div">/</button>
+        </div>
+        <br><hr>
+        <p id="answer">....</p>       
+
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        </div>
+
+
+    <script src = "interCal.js"></script>
     
 </body>
 </html>
