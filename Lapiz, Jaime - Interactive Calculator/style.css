@@ -1,0 +1,51 @@
+body {
+    background-color: #95c3f0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align:center;
+}
+
+.operation {
+    text-align:center;
+}
+
+.operation .btn{
+    font-weight: bold;
+    background-color:#7fa7e6;
+    border:none;
+    width: 3em;
+    height: 3em;
+}
+
+.operators {
+    margin-left: 10%;
+}
+
+.operators input {
+    background-color:#f2fdff;
+    outline-style: none;
+    width: 90%;
+    height: 3em;
+    border:none;
+    border-radius: 10px;
+}
+
+.operators label {
+    color: #ffffff;
+    font-weight:bold;
+}
+
+.result {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.result p {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+
+
