@@ -1,7 +1,6 @@
 var addToList = document.getElementById("add");
-var list = document.getElementsByClassName("to-do-list");
 var ul = document.querySelector("ul");
-var activityLine = document.getElementsByTagName("li");
+
 
 function addDelButton(parent) {
     var buttonElem = parent.appendChild(document.createElement("button"));
@@ -11,10 +10,11 @@ function addDelButton(parent) {
         this.parentElement.remove();
 }}
 
+
 addToList.addEventListener("click", function() {
     var userInput = document.getElementById("activity").value;
     var li = document.createElement("li");
-    li.className = "checked";
+    
     var txt = document.createTextNode(userInput);
     li.appendChild(txt);
 
@@ -28,8 +28,9 @@ addToList.addEventListener("click", function() {
     
 });
 
-ul.addEventListener("click", function(ev) {
-    if (ev.target.tagName === "li") {
-        ev.target.classList.toggle("checked");
-    }
+
+ul.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
 }, false);

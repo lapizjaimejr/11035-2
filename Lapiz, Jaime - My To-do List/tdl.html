@@ -17,16 +17,16 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <div class = "container">
+    <div class = "container"></div>
         <h1>MY TO-DO LIST</h1>
     
         <div class="content">
-            <input type ="text" id="activity" placeholder ="input activities">
-            <button type ="button" class ="btn btn-primary" id="add">Add</button>
+            <input type ="text" id="activity" placeholder="input activities">
+            <button onclick="newElement()" type ="button" class ="btn btn-primary" id="add">Add</button>
         </div>
     </div>    
             
-    <ul class ="to-do-list">
+    <ul id="to-do-list">
     </ul>
 
     <script src ="tdl.js"></script>
