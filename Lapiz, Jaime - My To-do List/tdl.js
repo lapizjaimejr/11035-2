@@ -13,13 +13,12 @@ function addDelButton(parent) {
 
 addToList.addEventListener("click", function() {
     var userInput = document.getElementById("activity").value;
-    var li = document.createElement("li");
-    
+    var li = document.createElement("li"); 
     var txt = document.createTextNode(userInput);
     li.appendChild(txt);
 
     if (userInput === "")
-        alert("You have not written in the textfield");
+        alert("You have not written in the textfield.");
     else
         ul.appendChild(li);
 
