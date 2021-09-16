@@ -4,7 +4,7 @@ var ul = document.querySelector("ul");
 
 function addDelButton(parent) {
     var buttonElem = parent.appendChild(document.createElement("button"));
-    buttonElem.innerHTML = "X";
+    buttonElem.innerHTML = "REMOVE";
     buttonElem.className = "close";
     buttonElem.onclick = function() {
         this.parentElement.remove();
